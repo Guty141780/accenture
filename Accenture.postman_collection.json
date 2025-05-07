@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "7f1b16f4-9d96-4ef3-8d34-4c08c6bb4904",
+		"name": "Accenture",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40617114"
+	},
+	"item": [
+		{
+			"name": "createFranquicias",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzA4MWNhOWNiYjM3YzIzNDk4ZGQzOTQzYmYzNzFhMDU4ODNkMjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc3luY2RhdGEtZGV2IiwiYXVkIjoic3luY2RhdGEtZGV2IiwiYXV0aF90aW1lIjoxNzQ0OTQzMTAyLCJ1c2VyX2lkIjoiUEF6OUNpZlFWNE85cE1La1VJdUFHWXVJcmdPMiIsInN1YiI6IlBBejlDaWZRVjRPOXBNS2tVSXVBR1l1SXJnTzIiLCJpYXQiOjE3NDQ5NDMxMDIsImV4cCI6MTc0NDk0NjcwMiwiZW1haWwiOiJndWlsbGVybW9Ac3luY2RhdGEuYWkiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VpbGxlcm1vQHN5bmNkYXRhLmFpIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.gQ4Y3aE5DLaRWSmeecDL4dG_MQwy2rXQxwRl1BRd-fjoo1uBb9MXy9y3R2AR1cByxJoDSpli5TTbJti6GWA2pd5BI_6EdLH1bUgBzjZWsmARTjwVNezVxpYqj08AXe_rIceKpgO8tZVo9NU_GlUMN3xl26mKpxYrIZ7v6V2d8oJWdDg3m53BTw3MwhbEyaORq_mFTDb-7TKRYvOxxjRQJCAXzTSx6Hbd7jNwWNeh7KkXVlSdzbZt_33s9uQjGf6BBwzwy8-9ooYsIX1KPqHnSEfRI4f93MQPCzKzBn-oS_QwPRZ76tVgKWdISJHCPhr8EpkmMFavN-hGX42WUee5Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"F001\",\r\n  \"nombre\": \"Burger Planet\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/franquicias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"franquicias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createSucursalFranquicia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzA4MWNhOWNiYjM3YzIzNDk4ZGQzOTQzYmYzNzFhMDU4ODNkMjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc3luY2RhdGEtZGV2IiwiYXVkIjoic3luY2RhdGEtZGV2IiwiYXV0aF90aW1lIjoxNzQ0OTQzMTAyLCJ1c2VyX2lkIjoiUEF6OUNpZlFWNE85cE1La1VJdUFHWXVJcmdPMiIsInN1YiI6IlBBejlDaWZRVjRPOXBNS2tVSXVBR1l1SXJnTzIiLCJpYXQiOjE3NDQ5NDMxMDIsImV4cCI6MTc0NDk0NjcwMiwiZW1haWwiOiJndWlsbGVybW9Ac3luY2RhdGEuYWkiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VpbGxlcm1vQHN5bmNkYXRhLmFpIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.gQ4Y3aE5DLaRWSmeecDL4dG_MQwy2rXQxwRl1BRd-fjoo1uBb9MXy9y3R2AR1cByxJoDSpli5TTbJti6GWA2pd5BI_6EdLH1bUgBzjZWsmARTjwVNezVxpYqj08AXe_rIceKpgO8tZVo9NU_GlUMN3xl26mKpxYrIZ7v6V2d8oJWdDg3m53BTw3MwhbEyaORq_mFTDb-7TKRYvOxxjRQJCAXzTSx6Hbd7jNwWNeh7KkXVlSdzbZt_33s9uQjGf6BBwzwy8-9ooYsIX1KPqHnSEfRI4f93MQPCzKzBn-oS_QwPRZ76tVgKWdISJHCPhr8EpkmMFavN-hGX42WUee5Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"S001\",\r\n  \"nombre\": \"Sucursal Centro\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/franquicias/F001/sucursales",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"franquicias",
+						"F001",
+						"sucursales"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProductosSucursal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzA4MWNhOWNiYjM3YzIzNDk4ZGQzOTQzYmYzNzFhMDU4ODNkMjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc3luY2RhdGEtZGV2IiwiYXVkIjoic3luY2RhdGEtZGV2IiwiYXV0aF90aW1lIjoxNzQ0OTQzMTAyLCJ1c2VyX2lkIjoiUEF6OUNpZlFWNE85cE1La1VJdUFHWXVJcmdPMiIsInN1YiI6IlBBejlDaWZRVjRPOXBNS2tVSXVBR1l1SXJnTzIiLCJpYXQiOjE3NDQ5NDMxMDIsImV4cCI6MTc0NDk0NjcwMiwiZW1haWwiOiJndWlsbGVybW9Ac3luY2RhdGEuYWkiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VpbGxlcm1vQHN5bmNkYXRhLmFpIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.gQ4Y3aE5DLaRWSmeecDL4dG_MQwy2rXQxwRl1BRd-fjoo1uBb9MXy9y3R2AR1cByxJoDSpli5TTbJti6GWA2pd5BI_6EdLH1bUgBzjZWsmARTjwVNezVxpYqj08AXe_rIceKpgO8tZVo9NU_GlUMN3xl26mKpxYrIZ7v6V2d8oJWdDg3m53BTw3MwhbEyaORq_mFTDb-7TKRYvOxxjRQJCAXzTSx6Hbd7jNwWNeh7KkXVlSdzbZt_33s9uQjGf6BBwzwy8-9ooYsIX1KPqHnSEfRI4f93MQPCzKzBn-oS_QwPRZ76tVgKWdISJHCPhr8EpkmMFavN-hGX42WUee5Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"P001\",\r\n  \"nombre\": \"Combo Familiar\",\r\n  \"stock\": 30\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/franquicias/F001/sucursales/S001/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"franquicias",
+						"F001",
+						"sucursales",
+						"S001",
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStock",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzA4MWNhOWNiYjM3YzIzNDk4ZGQzOTQzYmYzNzFhMDU4ODNkMjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc3luY2RhdGEtZGV2IiwiYXVkIjoic3luY2RhdGEtZGV2IiwiYXV0aF90aW1lIjoxNzQ0OTQzMTAyLCJ1c2VyX2lkIjoiUEF6OUNpZlFWNE85cE1La1VJdUFHWXVJcmdPMiIsInN1YiI6IlBBejlDaWZRVjRPOXBNS2tVSXVBR1l1SXJnTzIiLCJpYXQiOjE3NDQ5NDMxMDIsImV4cCI6MTc0NDk0NjcwMiwiZW1haWwiOiJndWlsbGVybW9Ac3luY2RhdGEuYWkiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VpbGxlcm1vQHN5bmNkYXRhLmFpIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.gQ4Y3aE5DLaRWSmeecDL4dG_MQwy2rXQxwRl1BRd-fjoo1uBb9MXy9y3R2AR1cByxJoDSpli5TTbJti6GWA2pd5BI_6EdLH1bUgBzjZWsmARTjwVNezVxpYqj08AXe_rIceKpgO8tZVo9NU_GlUMN3xl26mKpxYrIZ7v6V2d8oJWdDg3m53BTw3MwhbEyaORq_mFTDb-7TKRYvOxxjRQJCAXzTSx6Hbd7jNwWNeh7KkXVlSdzbZt_33s9uQjGf6BBwzwy8-9ooYsIX1KPqHnSEfRI4f93MQPCzKzBn-oS_QwPRZ76tVgKWdISJHCPhr8EpkmMFavN-hGX42WUee5Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"stock\": 80\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/franquicias/F001/sucursales/S001/productos/P001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"franquicias",
+						"F001",
+						"sucursales",
+						"S001",
+						"productos",
+						"P001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateNombreFranquicia",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzA4MWNhOWNiYjM3YzIzNDk4ZGQzOTQzYmYzNzFhMDU4ODNkMjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc3luY2RhdGEtZGV2IiwiYXVkIjoic3luY2RhdGEtZGV2IiwiYXV0aF90aW1lIjoxNzQ0OTQzMTAyLCJ1c2VyX2lkIjoiUEF6OUNpZlFWNE85cE1La1VJdUFHWXVJcmdPMiIsInN1YiI6IlBBejlDaWZRVjRPOXBNS2tVSXVBR1l1SXJnTzIiLCJpYXQiOjE3NDQ5NDMxMDIsImV4cCI6MTc0NDk0NjcwMiwiZW1haWwiOiJndWlsbGVybW9Ac3luY2RhdGEuYWkiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VpbGxlcm1vQHN5bmNkYXRhLmFpIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.gQ4Y3aE5DLaRWSmeecDL4dG_MQwy2rXQxwRl1BRd-fjoo1uBb9MXy9y3R2AR1cByxJoDSpli5TTbJti6GWA2pd5BI_6EdLH1bUgBzjZWsmARTjwVNezVxpYqj08AXe_rIceKpgO8tZVo9NU_GlUMN3xl26mKpxYrIZ7v6V2d8oJWdDg3m53BTw3MwhbEyaORq_mFTDb-7TKRYvOxxjRQJCAXzTSx6Hbd7jNwWNeh7KkXVlSdzbZt_33s9uQjGf6BBwzwy8-9ooYsIX1KPqHnSEfRI4f93MQPCzKzBn-oS_QwPRZ76tVgKWdISJHCPhr8EpkmMFavN-hGX42WUee5Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nuevoNombre\": \"Burger Universe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/franquicias/F001/nombre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"franquicias",
+						"F001",
+						"nombre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateNombreSucursal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzA4MWNhOWNiYjM3YzIzNDk4ZGQzOTQzYmYzNzFhMDU4ODNkMjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc3luY2RhdGEtZGV2IiwiYXVkIjoic3luY2RhdGEtZGV2IiwiYXV0aF90aW1lIjoxNzQ0OTQzMTAyLCJ1c2VyX2lkIjoiUEF6OUNpZlFWNE85cE1La1VJdUFHWXVJcmdPMiIsInN1YiI6IlBBejlDaWZRVjRPOXBNS2tVSXVBR1l1SXJnTzIiLCJpYXQiOjE3NDQ5NDMxMDIsImV4cCI6MTc0NDk0NjcwMiwiZW1haWwiOiJndWlsbGVybW9Ac3luY2RhdGEuYWkiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VpbGxlcm1vQHN5bmNkYXRhLmFpIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.gQ4Y3aE5DLaRWSmeecDL4dG_MQwy2rXQxwRl1BRd-fjoo1uBb9MXy9y3R2AR1cByxJoDSpli5TTbJti6GWA2pd5BI_6EdLH1bUgBzjZWsmARTjwVNezVxpYqj08AXe_rIceKpgO8tZVo9NU_GlUMN3xl26mKpxYrIZ7v6V2d8oJWdDg3m53BTw3MwhbEyaORq_mFTDb-7TKRYvOxxjRQJCAXzTSx6Hbd7jNwWNeh7KkXVlSdzbZt_33s9uQjGf6BBwzwy8-9ooYsIX1KPqHnSEfRI4f93MQPCzKzBn-oS_QwPRZ76tVgKWdISJHCPhr8EpkmMFavN-hGX42WUee5Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nuevoNombre\": \"Sucursal Sur\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/franquicias/F001/sucursales/S001/nombre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"franquicias",
+						"F001",
+						"sucursales",
+						"S001",
+						"nombre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateNombreProducto",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzA4MWNhOWNiYjM3YzIzNDk4ZGQzOTQzYmYzNzFhMDU4ODNkMjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc3luY2RhdGEtZGV2IiwiYXVkIjoic3luY2RhdGEtZGV2IiwiYXV0aF90aW1lIjoxNzQ0OTQzMTAyLCJ1c2VyX2lkIjoiUEF6OUNpZlFWNE85cE1La1VJdUFHWXVJcmdPMiIsInN1YiI6IlBBejlDaWZRVjRPOXBNS2tVSXVBR1l1SXJnTzIiLCJpYXQiOjE3NDQ5NDMxMDIsImV4cCI6MTc0NDk0NjcwMiwiZW1haWwiOiJndWlsbGVybW9Ac3luY2RhdGEuYWkiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VpbGxlcm1vQHN5bmNkYXRhLmFpIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.gQ4Y3aE5DLaRWSmeecDL4dG_MQwy2rXQxwRl1BRd-fjoo1uBb9MXy9y3R2AR1cByxJoDSpli5TTbJti6GWA2pd5BI_6EdLH1bUgBzjZWsmARTjwVNezVxpYqj08AXe_rIceKpgO8tZVo9NU_GlUMN3xl26mKpxYrIZ7v6V2d8oJWdDg3m53BTw3MwhbEyaORq_mFTDb-7TKRYvOxxjRQJCAXzTSx6Hbd7jNwWNeh7KkXVlSdzbZt_33s9uQjGf6BBwzwy8-9ooYsIX1KPqHnSEfRI4f93MQPCzKzBn-oS_QwPRZ76tVgKWdISJHCPhr8EpkmMFavN-hGX42WUee5Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nuevoNombre\": \"Combo Familiar XL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/franquicias/F001/sucursales/S001/productos/P001/nombre",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"franquicias",
+						"F001",
+						"sucursales",
+						"S001",
+						"productos",
+						"P001",
+						"nombre"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMaxStock",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzA4MWNhOWNiYjM3YzIzNDk4ZGQzOTQzYmYzNzFhMDU4ODNkMjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc3luY2RhdGEtZGV2IiwiYXVkIjoic3luY2RhdGEtZGV2IiwiYXV0aF90aW1lIjoxNzQ0OTQzMTAyLCJ1c2VyX2lkIjoiUEF6OUNpZlFWNE85cE1La1VJdUFHWXVJcmdPMiIsInN1YiI6IlBBejlDaWZRVjRPOXBNS2tVSXVBR1l1SXJnTzIiLCJpYXQiOjE3NDQ5NDMxMDIsImV4cCI6MTc0NDk0NjcwMiwiZW1haWwiOiJndWlsbGVybW9Ac3luY2RhdGEuYWkiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VpbGxlcm1vQHN5bmNkYXRhLmFpIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.gQ4Y3aE5DLaRWSmeecDL4dG_MQwy2rXQxwRl1BRd-fjoo1uBb9MXy9y3R2AR1cByxJoDSpli5TTbJti6GWA2pd5BI_6EdLH1bUgBzjZWsmARTjwVNezVxpYqj08AXe_rIceKpgO8tZVo9NU_GlUMN3xl26mKpxYrIZ7v6V2d8oJWdDg3m53BTw3MwhbEyaORq_mFTDb-7TKRYvOxxjRQJCAXzTSx6Hbd7jNwWNeh7KkXVlSdzbZt_33s9uQjGf6BBwzwy8-9ooYsIX1KPqHnSEfRI4f93MQPCzKzBn-oS_QwPRZ76tVgKWdISJHCPhr8EpkmMFavN-hGX42WUee5Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/franquicias/F001/productos/max-stock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"franquicias",
+						"F001",
+						"productos",
+						"max-stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFranquicias",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzA4MWNhOWNiYjM3YzIzNDk4ZGQzOTQzYmYzNzFhMDU4ODNkMjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc3luY2RhdGEtZGV2IiwiYXVkIjoic3luY2RhdGEtZGV2IiwiYXV0aF90aW1lIjoxNzQ0OTQzMTAyLCJ1c2VyX2lkIjoiUEF6OUNpZlFWNE85cE1La1VJdUFHWXVJcmdPMiIsInN1YiI6IlBBejlDaWZRVjRPOXBNS2tVSXVBR1l1SXJnTzIiLCJpYXQiOjE3NDQ5NDMxMDIsImV4cCI6MTc0NDk0NjcwMiwiZW1haWwiOiJndWlsbGVybW9Ac3luY2RhdGEuYWkiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VpbGxlcm1vQHN5bmNkYXRhLmFpIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.gQ4Y3aE5DLaRWSmeecDL4dG_MQwy2rXQxwRl1BRd-fjoo1uBb9MXy9y3R2AR1cByxJoDSpli5TTbJti6GWA2pd5BI_6EdLH1bUgBzjZWsmARTjwVNezVxpYqj08AXe_rIceKpgO8tZVo9NU_GlUMN3xl26mKpxYrIZ7v6V2d8oJWdDg3m53BTw3MwhbEyaORq_mFTDb-7TKRYvOxxjRQJCAXzTSx6Hbd7jNwWNeh7KkXVlSdzbZt_33s9uQjGf6BBwzwy8-9ooYsIX1KPqHnSEfRI4f93MQPCzKzBn-oS_QwPRZ76tVgKWdISJHCPhr8EpkmMFavN-hGX42WUee5Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/franquicias",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"franquicias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProductSucursal",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg1NzA4MWNhOWNiYjM3YzIzNDk4ZGQzOTQzYmYzNzFhMDU4ODNkMjgiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vc3luY2RhdGEtZGV2IiwiYXVkIjoic3luY2RhdGEtZGV2IiwiYXV0aF90aW1lIjoxNzQ0OTQzMTAyLCJ1c2VyX2lkIjoiUEF6OUNpZlFWNE85cE1La1VJdUFHWXVJcmdPMiIsInN1YiI6IlBBejlDaWZRVjRPOXBNS2tVSXVBR1l1SXJnTzIiLCJpYXQiOjE3NDQ5NDMxMDIsImV4cCI6MTc0NDk0NjcwMiwiZW1haWwiOiJndWlsbGVybW9Ac3luY2RhdGEuYWkiLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImZpcmViYXNlIjp7ImlkZW50aXRpZXMiOnsiZW1haWwiOlsiZ3VpbGxlcm1vQHN5bmNkYXRhLmFpIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.gQ4Y3aE5DLaRWSmeecDL4dG_MQwy2rXQxwRl1BRd-fjoo1uBb9MXy9y3R2AR1cByxJoDSpli5TTbJti6GWA2pd5BI_6EdLH1bUgBzjZWsmARTjwVNezVxpYqj08AXe_rIceKpgO8tZVo9NU_GlUMN3xl26mKpxYrIZ7v6V2d8oJWdDg3m53BTw3MwhbEyaORq_mFTDb-7TKRYvOxxjRQJCAXzTSx6Hbd7jNwWNeh7KkXVlSdzbZt_33s9uQjGf6BBwzwy8-9ooYsIX1KPqHnSEfRI4f93MQPCzKzBn-oS_QwPRZ76tVgKWdISJHCPhr8EpkmMFavN-hGX42WUee5Wg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"stock\": 80\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/franquicias/F001/sucursales/S001/productos/P001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"franquicias",
+						"F001",
+						"sucursales",
+						"S001",
+						"productos",
+						"P001"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
