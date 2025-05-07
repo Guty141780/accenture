@@ -83,7 +83,7 @@ http://localhost:8080/api/franquicias
 
 Puedes importar y probar todos los endpoints desde esta colección:
 
-[Descargar colección Postman](Accenture.postman_collection)
+[Descargar colección Postman](./franquicia-api.Accenture.postman_collection)
 
 
 
